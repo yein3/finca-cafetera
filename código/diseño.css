@@ -1,0 +1,196 @@
+
+/* Estilos generales de la aplicación */
+
+* {
+    box-sizing: border-box;
+}
+/*
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f2;
+    color: #26352b;
+}
+*/
+header {
+    background-color: #527ede;
+    color: rgb(36, 61, 33);
+    padding: 24px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #312bdb;
+    padding: 12px 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+main {
+    padding: 24px;
+}
+ 
+
+
+    
+/* Organización general */
+* {
+    box-sizing: border-box;
+}
+/*heder */
+header {
+    background-color: #527ede;
+    color: rgb(36, 61, 33);
+    padding: 24px;
+    
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dadfd7;
+    color: #354e30;
+}
+
+.aplicacion {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menú lateral */
+.menu-lateral {
+    width: 230px;
+    flex-shrink: 0;
+    background-color: #244f31;
+    color: white;
+    padding: 24px 16px;
+}
+
+.menu-lateral nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.menu-lateral nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.menu-lateral nav a:hover {
+    background-color: #397348;
+}
+
+/* Contenido principal */
+.contenido {
+    flex: 1;
+    min-width: 0;
+    padding: 28px;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+/* Secciones */
+.contenido section {
+    margin-bottom: 24px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #dce5da;
+}
+
+
+
+/* Organiza las tarjetas en filas y columnas */
+.rejilla-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Apariencia de cada tarjeta */
+.tarjeta {
+    background-color: white;
+    padding: 24px;
+    border: 1px solid #43c726;
+    border-radius: 10px;
+    min-width: 0;
+}
+.tarjeta-destacada {
+    grid-column: span 2;
+    background-color: #e0f7e0;
+    border-color: #43c726;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .rejilla-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+/* Adaptación para celular */
+@media (max-width: 600px) {
+    .aplicacion {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 16px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .aplicacion {
+        flex-direction: column;
+    }
+
+    .menu-lateral {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 16px;
+    }
+
+    .tarjeta {
+        flex-basis: 100%;
+    }
+}
